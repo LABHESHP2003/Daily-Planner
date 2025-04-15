@@ -41,14 +41,17 @@ CREATE TABLE IF NOT EXISTS tasks (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
+
 💻 How to Run
 
 1.Clone this repository:
+
 git clone https://github.com/LABHESHP2003/Daily-Planner.git
 
 2.Open the project in IntelliJ IDEA or any other Java IDE.
 
 3.Update the database credentials in DBConnection.java:
+
 String user = "root";
 String password = "Your@123";
 
@@ -66,5 +69,6 @@ String password = "Your@123";
 ├── daily_planner.sql (optional database file)
 
 👤 Author
+
 GitHub: @LABHESHP2003
 
