@@ -40,37 +40,40 @@ CREATE TABLE IF NOT EXISTS tasks (
     status VARCHAR(20) DEFAULT 'Pending',
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
-```sql
+```
 
-💻 How to Run
+## 💻 How to Run
 
-1.Clone this repository:
+1. Clone this repository:
 
-<pre> ``` git clone https://github.com/LABHESHP2003/Daily-Planner.git ``` </pre>
+```bash
+git clone https://github.com/LABHESHP2003/Daily-Planner.git
+```
 
-2.Open the project in IntelliJ IDEA or any other Java IDE.
+2. Open the project in IntelliJ IDEA or any other Java IDE.
 
-3.Update the database credentials in DBConnection.java:
+3. Update the database credentials in `DBConnection.java`:
 
-<pre> ```String user = "root";
-String password = "Your@123";``` </pre>
+```java
+String user = "root";
+String password = "Your@123";
+```
 
+4. Ensure MySQL is running and the database is set up.  
+5. Run `Main.java` to start the planner.
 
-4.Make sure MySQL is running and the database is set up.
+## 📁 Project Structure
 
-5.Run Main.java to start the planner.
-
-📁 Project Structure
-├── DBConnection.java
-├── Main.java
-├── Task.java
-├── TaskService.java
-├── User.java
-├── UserService.java
+```
+├── DBConnection.java  
+├── Main.java  
+├── Task.java  
+├── TaskService.java  
+├── User.java  
+├── UserService.java  
 ├── daily_planner.sql (optional database file)
+```
 
-👤 Author
+## 👤 Author
 
-GitHub:<pre> ``` @LABHESHP2003``` </pre>
-
-
+GitHub: [@LABHESHP2003](https://github.com/LABHESHP2003)
