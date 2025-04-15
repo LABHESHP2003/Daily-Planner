@@ -40,20 +40,21 @@ CREATE TABLE IF NOT EXISTS tasks (
     status VARCHAR(20) DEFAULT 'Pending',
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
-
+```sql
 
 💻 How to Run
 
 1.Clone this repository:
 
-git clone https://github.com/LABHESHP2003/Daily-Planner.git
+<pre> ``` git clone https://github.com/LABHESHP2003/Daily-Planner.git ``` </pre>
 
 2.Open the project in IntelliJ IDEA or any other Java IDE.
 
 3.Update the database credentials in DBConnection.java:
 
-String user = "root";
-String password = "Your@123";
+<pre> ```String user = "root";
+String password = "Your@123";``` </pre>
+
 
 4.Make sure MySQL is running and the database is set up.
 
@@ -70,5 +71,6 @@ String password = "Your@123";
 
 👤 Author
 
-GitHub: @LABHESHP2003
+GitHub:<pre> ``` @LABHESHP2003``` </pre>
+
 
